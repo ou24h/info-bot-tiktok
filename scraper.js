@@ -17,8 +17,8 @@ async function scrapeTikTok(username) {
     };
 
     const rawRegion = (() => {
-      const matches = [...html.matchAll(/"region":"([^"]+)"/g)];
-      return matches[1] ? matches[1][1] : 'Not Found';
+        const match = html.match(/"region":"([^"]+)"/);
+        return match ? match[1] : 'Not Found';
     })();
     const regionObj = countries.find(c => c.code === rawRegion);
     const region = regionObj ? `${regionObj.name} ${regionObj.emoji}` : rawRegion;
@@ -65,5 +65,6 @@ Avatar: ${data.avatar}
     return '❌ حدث خطأ أثناء جلب البيانات.';
   }
 }
+
 
 module.exports = scrapeTikTok;
