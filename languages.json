@@ -1,0 +1,11 @@
+[
+  { "name": "Arabic", "code": "ar" },
+  { "name": "English", "code": "en" },
+  { "name": "French", "code": "fr" },
+  { "name": "Spanish", "code": "es" },
+  { "name": "Chinese", "code": "zh" },
+  { "name": "Russian", "code": "ru" },
+  { "name": "Hindi", "code": "hi" },
+  { "name": "Japanese", "code": "ja" },
+  { "name": "Korean", "code": "ko" }
+]
